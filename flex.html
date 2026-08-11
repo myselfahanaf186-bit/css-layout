@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex layout</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        /* by default stays as row
+      */
+        /* gap:40px; */
+        /* justify-content: center; */
+        /* justify-content:space-between ; */
+        justify-content: space-around;
+      }
+      .box {
+        border: 5px solid blue;
+      }
+      .user-container{
+        display:flex;
+        gap: 20px;
+        /* justify-content: space-around; */
+       flex-wrap: wrap;  
+    }
+
+      .user{
+        border: 5px solid red;
+        height:20 px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">box-1</div>
+      <div class="box">box-2</div>
+      <div class="box">box-3</div>
+      <div class="box">box-4</div>
+    </div>
+
+    <!-- .user-conatiner>.user*5{user-&} -->
+    <div class="user-container">
+      <div class="user">user-1</div>
+      <div class="user">user-2</div>
+      <div class="user">user-3</div>
+      <div class="user">user-4</div>
+      <div class="user">user-5</div>
+      <div class="user">user-1</div>
+      <div class="user">user-2</div>
+      <div class="user">user-3</div>
+      <div class="user">user-4</div>
+      <div class="user">user-5</div>
+      <div class="user">user-1</div>
+      <div class="user">user-2</div>
+      <div class="user">user-3</div>
+      <div class="user">user-4</div>
+      <div class="user">user-5</div>
+    </div>
+  </body>
+</html>
